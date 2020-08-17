@@ -1,0 +1,12 @@
+{
+  "name": "vapid2",
+  "vapid": {
+  },
+  "scripts": {
+    "start": "vapid start .",
+    "build": "vapid build ."
+  },
+  "dependencies": {
+    "@vapid/cli": "^0.11.2"
+  }
+}
