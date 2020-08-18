@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Haberler</title>
+  <script src="https://kit.fontawesome.com/ea6b694cf6.js" crossorigin="anonymous"></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link href="https://fonts.googleapis.com/css?family=Monoton|Work+Sans:400,800" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="/stylesheets/blog.css">
+</head>
+
+<body>
+    {{>nav}}
+    <div class="hakkimda">
+      {{#section hakkimda }}
+    
+        <div class="wrapperh">
+            <div class="hakkimdah1"><h1 id="hakkimdah1">{{title}}</h1></div>
+            <p>{{post type="html" images="true"}}</p>
+         </div>
+    
+      {{/section}}
+     </div>
+    {{>footer}}
+</body>
+</html>
