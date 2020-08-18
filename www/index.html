@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Mehmet Bar</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="/stylesheets/blog.css">
+  <script src="https://kit.fontawesome.com/ea6b694cf6.js" crossorigin="anonymous"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link href="https://fonts.googleapis.com/css?family=Monoton|Work+Sans:400,800" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+     {{>nav}}
+     <div class="hero">
+       <div class="heading">
+         <div class="headingh1"><h1 id="headingh1">Yeni Nesil <br>Üniversite ve Kariyer <br>Öğrenci Danışmanlığı</h1></div>
+         <div class="herobtn"><div></div><a href="#footer" id="herobtn1">İletişim</a><a href="#a" id="herobtn2">Okuma Odası</a><div></div></div>
+        </div>
+       <div class="heroimg"><img src="./img/undraw_conversation_h12g.svg" alt=""></div>
+       
+     </div>
+     <div class="vidheading"><h1>Video Galeri</h1></div>
+     <div class="videogaleri">
+         <div id="videogaleri"><iframe src="https://www.youtube.com/embed/4KtfXhGPJzM"></iframe></div>
+         <div id="videogaleri"><iframe src="https://www.youtube.com/embed/SLolpxamXcc"></iframe></div>
+     </div>
+     <div class="anablogh1" id="a"><h1>Okuma Odası Seçilenler</h1></div>
+     <ol class="anablog">
+      {{#section anasayfa multiple=true}}
+       <li class="analist">
+          <h2><a href="{{postlinki}}">{{title}}</a></h2>
+          <p id="p">{{postozeti  type="html"}}<a href="{{postlinki}}" id="daha">Daha fazla oku...</a></p>
+      </li>
+      {{/section}}
+    </ol>
+
+     {{>footer}}
+
+  <script src="/javascripts/site.js"></script>
+</body>
+</html>
